@@ -24,7 +24,8 @@ namespace Unit05.Game.Scripting
         /// <inheritdoc/>
         public void Execute(Cast cast, Script script)
         {
-            Snake snake = (Snake)cast.GetFirstActor("snake");
+            Snake playerOne = (Snake)cast.GetFirstActor("snake");
+            Snake playerTwo = (Snake)cast.GetSecondActor("snake");
             List<Actor> segments = snake.GetSegments();
             Actor score = cast.GetFirstActor("score");
             Actor food = cast.GetFirstActor("food");
@@ -36,6 +37,8 @@ namespace Unit05.Game.Scripting
             videoService.DrawActor(food);
             videoService.DrawActors(messages);
             videoService.FlushBuffer();
+            playerOne.GrowTail(1);
+            playerTwo.GrowTail(1);
         }
     }
 }

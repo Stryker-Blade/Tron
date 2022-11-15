@@ -120,19 +120,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/laynemoseley/.nuget/packages/": {}
+    "C:\\Users\\JensenCall\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/laynemoseley/Library/CloudStorage/OneDrive-BYU-Idaho/Current Semester/CSE 210/poly day 2/snake_complete/Unit05.csproj",
+      "projectUniqueName": "C:\\Users\\JensenCall\\Programmin work\\Programming with Classes\\test work\\Greed\\Tron\\Unit05.csproj",
       "projectName": "Unit05",
-      "projectPath": "/Users/laynemoseley/Library/CloudStorage/OneDrive-BYU-Idaho/Current Semester/CSE 210/poly day 2/snake_complete/Unit05.csproj",
-      "packagesPath": "/Users/laynemoseley/.nuget/packages/",
-      "outputPath": "/Users/laynemoseley/Library/CloudStorage/OneDrive-BYU-Idaho/Current Semester/CSE 210/poly day 2/snake_complete/obj/",
+      "projectPath": "C:\\Users\\JensenCall\\Programmin work\\Programming with Classes\\test work\\Greed\\Tron\\Unit05.csproj",
+      "packagesPath": "C:\\Users\\JensenCall\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JensenCall\\Programmin work\\Programming with Classes\\test work\\Greed\\Tron\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/laynemoseley/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\JensenCall\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -177,7 +177,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
