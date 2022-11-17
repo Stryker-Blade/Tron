@@ -86,18 +86,6 @@ namespace Unit05.Game.Casting
             return result;
         }
         // added code
-        public Actor GetSecondActor(string group)
-        {
-            Actor result = null;
-            if (actors.ContainsKey(group))
-            {
-                if (actors[group].Count > 0)
-                {
-                    result = actors[group][0];
-                }
-            }
-            return result;
-        }
 
         /// <summary>
         /// Removes the given actor from the given group.
