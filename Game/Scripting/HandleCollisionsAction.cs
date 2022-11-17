@@ -42,17 +42,12 @@ namespace Unit05.Game.Scripting
         /// <param name="cast">The cast of actors.</param>
         private void HandleFoodCollisions(Cast cast)
         {
-            Snake snake = (Snake)cast.GetFirstActor("snake");
+            Snake playerOne = (Snake)cast.GetFirstActor("snake");
+            Snake playerTwo = (Snake)cast.GetFirstActor("snake");
             Score score = (Score)cast.GetFirstActor("score");
             Food food = (Food)cast.GetFirstActor("food");
             
-            if (snake.GetHead().GetPosition().Equals(food.GetPosition()))
-            {
-                int points = food.GetPoints();
-                snake.GrowTail(points);
-                score.AddPoints(points);
-                food.Reset();
-            }
+    
         }
 
         /// <summary>
@@ -61,9 +56,13 @@ namespace Unit05.Game.Scripting
         /// <param name="cast">The cast of actors.</param>
         private void HandleSegmentCollisions(Cast cast)
         {
-            Snake snake = (Snake)cast.GetFirstActor("snake");
-            Actor head = snake.GetHead();
-            List<Actor> body = snake.GetBody();
+            Snake playerOne = (Snake)cast.GetFirstActor("snake");
+            Actor head = playerOne.GetHead();
+            List<Actor> body = playerOne.GetBody();
+
+            Snake playerTwo = (Snake)cast.GetFirstActor("snake");
+            Actor head = playerTwo.GetHead();
+            List<Actor> body = playerTwo.GetBody();
 
             foreach (Actor segment in body)
             {
@@ -78,9 +77,11 @@ namespace Unit05.Game.Scripting
         {
             if (isGameOver == true)
             {
-                Snake snake = (Snake)cast.GetFirstActor("snake");
-                List<Actor> segments = snake.GetSegments();
+                Snake playerOne = (Snake)cast.GetFirstActor("snake");
+                List<Actor> segments = playerOne.GetSegments();
                 Food food = (Food)cast.GetFirstActor("food");
+                Snake playerTwo = (Snake)cast.GetSecondActor("snake");
+                List<Actor> segments = playerTwo.GetSegments();
 
                 // create a "game over" message
                 int x = Constants.MAX_X / 2;
